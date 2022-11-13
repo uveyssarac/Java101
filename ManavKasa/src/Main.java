@@ -10,6 +10,7 @@ public class Main {
         float patlican=5.00f;
         float toplam=0;
         Scanner inp= new Scanner(System.in);
+
         System.out.println("Armut kaç kilo : ");
         int kilo= inp.nextInt();
         toplam+=kilo*armut;
@@ -17,15 +18,19 @@ public class Main {
         System.out.println("Elma kaç kilo : ");
         kilo= inp.nextInt();
         toplam+=kilo*elma;
+
         System.out.println("Domates kaç kilo : ");
         kilo= inp.nextInt();
         toplam+=kilo*domates;
+
         System.out.println("Muz kaç kilo : ");
         kilo= inp.nextInt();
         toplam+=kilo*muz;
+
         System.out.println("Patlıcan kaç kilo : ");
         kilo= inp.nextInt();
         toplam+=kilo*patlican;
+
         System.out.println("Toplam tutar : "+toplam+" TL");
     }
 }
