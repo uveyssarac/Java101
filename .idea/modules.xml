@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java101.iml" filepath="$PROJECT_DIR$/Java101.iml" />
       <module fileurl="file://$PROJECT_DIR$/KullaniciGirisi/KullaniciGirisi.iml" filepath="$PROJECT_DIR$/KullaniciGirisi/KullaniciGirisi.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotOrtalamasi/NotOrtalamasi.iml" filepath="$PROJECT_DIR$/NotOrtalamasi/NotOrtalamasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SinifGecme/SinifGecme.iml" filepath="$PROJECT_DIR$/SinifGecme/SinifGecme.iml" />
     </modules>
   </component>
 </project>
