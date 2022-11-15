@@ -5,19 +5,19 @@ public class Main {
 
         int mat, fizik, turkce, kimya, muzik;
         Scanner inp = new Scanner(System.in);
-        System.out.println("Matematik notunuzu giriniz : "); // Username'i kullanıcıdan alma
+        System.out.println("Matematik notunuzu giriniz : "); // Matematik notunu kullanıcıdan alma
         mat = inp.nextInt();
-        System.out.println("Fizik notunuzu giriniz : "); // Username'i kullanıcıdan alma
+        System.out.println("Fizik notunuzu giriniz : "); // Fizik notunu kullanıcıdan alma
         fizik = inp.nextInt();
-        System.out.println("Türkçe notunuzu giriniz : "); // Username'i kullanıcıdan alma
+        System.out.println("Türkçe notunuzu giriniz : "); // Türkçe notunu kullanıcıdan alma
         turkce = inp.nextInt();
-        System.out.println("Kimya notunuzu giriniz : "); // Username'i kullanıcıdan alma
+        System.out.println("Kimya notunuzu giriniz : "); // Kimya notunu kullanıcıdan alma
         kimya = inp.nextInt();
-        System.out.println("Müzik notunuzu giriniz : "); // Username'i kullanıcıdan alma
+        System.out.println("Müzik notunuzu giriniz : "); // Müzik notunu kullanıcıdan alma
         muzik = inp.nextInt();
 
         float avarage;
-        if(mat<0 || mat>100){
+        if       (mat<0 || mat>100){     //Notun 0-100 arasında olması kontrolü eğer değilse ortalamaya katılmaz
             avarage = (turkce+fizik+kimya+muzik)/4f;
         }else if (turkce<0 || turkce>100){
             avarage = (mat+fizik+kimya+muzik)/4f;
@@ -30,8 +30,12 @@ public class Main {
         }else{
             avarage = (mat+turkce+fizik+kimya+muzik)/5f;
         }
+        if(avarage>=55){    // Ortalamaya göre sınıf geçme veya kalma durumu kontrolü
+            System.out.println("Not ortalamanız : " +avarage+"\nSınıfı geçtiniz.");
+        }else {
+            System.out.println("Not ortalamanız : " +avarage+"\nSınıfı geçemediniz.");
+        }
 
-        System.out.println("Not ortalamanız : " +avarage);
 
 
 
