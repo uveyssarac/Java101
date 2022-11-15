@@ -12,26 +12,26 @@ public class Main {
         int c = inp.nextInt();
         String result="";
 
-        if(a>b && a>c){             //En büyük a ise result stringine a eklenir.
+        if(a<b && a<c){             //En küçük a ise result stringine a eklenir.
             result+="a";
-            if(b>c){               //b>c b ise result stringine a eklenir.Değilse sıralamaya c>b diye eklenir
-                result+=">b>c";
+            if(b<c){               //b>c b ise result stringine a eklenir.Değilse sıralamaya c<b diye eklenir
+                result+="<b<c";
             }else{
-                result+=">c>b";
+                result+="<c<b";
             }
-        } else if (b>a && b>c) {//En büyük b ise result stringine a eklenir.
+        } else if (b<a && b<c) {//En küçük b ise result stringine a eklenir.
             result+="b";
-            if(a>c){
-                result+=">a>c";     //a>c b ise result stringine a eklenir.Değilse sıralamaya c>a diye eklenir
+            if(a<c){
+                result+="<a<c";     //a<c b ise result stringine a eklenir.Değilse sıralamaya c<a diye eklenir
             }else{
-                result+=">c>a";
+                result+="<c<a";
             }
-        } else{                 //En büyük c ise result stringine a eklenir.
+        } else{                 //En küçük c ise result stringine a eklenir.
             result+="c";
-            if(b>a){                //b>a b ise result stringine a eklenir.Değilse sıralamaya a>b diye eklenir
-                result+=">b>a";
+            if(b<a){                //b<a b ise result stringine a eklenir.Değilse sıralamaya a<b diye eklenir
+                result+="<b<a";
             }else{
-                result+=">a>b";
+                result+="<a<b";
             }
         }
         System.out.println(result); //Sonda da result yazdırılır
