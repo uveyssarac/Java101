@@ -5,7 +5,7 @@ public class Main {
 
         long n, sum=0;
         Scanner sc=new Scanner(System.in);
-        System.out.print("Bİr sayı giriniz: ");
+        System.out.print("Bir sayı giriniz: ");
         n=sc.nextLong();
         int i=1;
         //executes until the condition becomes false
