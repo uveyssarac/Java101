@@ -10,8 +10,12 @@ public class Main {
         System.out.println("Yaşınızı giriniz : "); // Yaş bilgisini alma
         int age = inp.nextInt();
 
-        System.out.println("Tek yön mü, Gidiş-dönüş mü? (ty/gd) : ");
+        System.out.println("Tek yön için : 1, Gidiş dönüş için : 2, değerini giriniz  : ");
         int trip = inp.nextInt();
+
+        float kmPrice=0.10f;
+
+        System.out.println("Normal tutar :"+distance*kmPrice);
 
     }
 }
