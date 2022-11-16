@@ -24,8 +24,25 @@ public class Main {
             System.exit(0);                    //Veri hatalı ise program sonlanır
         }
         float kmPrice=0.10f;                         //Km başına ücret
+        float tutar = distance*kmPrice;              //Ücret tutarı
+        float ageDiscount=0;
+        if(age<12){
+            ageDiscount=tutar/2f;
+        } else if (age<24) {
+            ageDiscount=tutar*0.10f;
+        } else if (age>65) {
+            ageDiscount=tutar*0.30f;
+        }
+        float tripDiscount=0;
+        if (trip==2){
+            tripDiscount=tutar*0.20f;
+        }
 
-        System.out.println("Normal tutar :"+distance*kmPrice*trip);
+        tutar=(tutar-ageDiscount-tripDiscount)*trip;
+
+        System.out.println("Normal tutar :"+tutar);
+
+
 
 
     }
