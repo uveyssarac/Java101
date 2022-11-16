@@ -19,7 +19,7 @@ public class Main {
         }
         System.out.println("Tek yön için : 1, Gidiş dönüş için : 2, değerini giriniz  : ");
         int trip = inp.nextInt();
-        if(!(age==1 || age ==2)){                    //Yolculuk tipi kontrolü
+        if(!(trip==1 || trip ==2)){                    //Yolculuk tipi kontrolü
             System.out.println("Hatalı veri girdiniz");
             System.exit(0);                    //Veri hatalı ise program sonlanır
         }
