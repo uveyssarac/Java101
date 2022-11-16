@@ -11,7 +11,7 @@ public class Main {
                 }
             }
 
-            if(control==0) {
+            if(control==0) {                    //control değeri 1 olmadıysa asaldır.
                 System.out.print(i+" ");
             }
         }
