@@ -10,7 +10,6 @@ public class Main {
             System.out.println("Hatalı veri girdiniz");
             System.exit(0);                   //Veri hatalı ise program sonlanır
         }
-
         System.out.println("Yaşınızı giriniz : ");  // Yaş bilgisini alma
         int age = inp.nextInt();                    // Yaş pozitif değer kontrolü
         if(!(age>0)){
@@ -24,23 +23,30 @@ public class Main {
             System.exit(0);                    //Veri hatalı ise program sonlanır
         }
         float kmPrice=0.10f;                         //Km başına ücret
-        float tutar = distance*kmPrice;              //Ücret tutarı
-        float ageDiscount=0;
-        if(age<12){
-            ageDiscount=tutar/2f;
+        float tutar = distance*kmPrice;              //Normal ücret tutarı
+        //float ageDiscount=0;
+
+        if(age<12){                                  //Yaş indirimi hesaplama
+            tutar=tutar-(tutar/2f);
+            System.out.println("yaş indirimi : "+tutar*0.50f);
         } else if (age<24) {
-            ageDiscount=tutar*0.10f;
+            tutar=tutar-(tutar*0.10f);
+            System.out.println("yaş indirimi : "+tutar*0.10f);
         } else if (age>65) {
-            ageDiscount=tutar*0.30f;
-        }
-        float tripDiscount=0;
-        if (trip==2){
-            tripDiscount=tutar*0.20f;
+            tutar=tutar-(tutar*0.30f);
+            System.out.println("yaş indirimi : "+tutar*0.30f);
+        }else{
+            System.out.println("yaş indirimi : 0 ");
         }
 
-        tutar=(tutar-ageDiscount-tripDiscount)*trip;
 
-        System.out.println("Normal tutar :"+tutar);
+        if (trip==2){                               //Gidiş Dönüş Bilet İndirimi
+            tutar=tutar-(tutar*0.20f);
+        }
+        System.out.println("Gidiş Dönüş Bilet İndirimi : "+tutar*0.20f);
+        tutar=tutar*trip;                           //Toplam tutar
+
+        System.out.println("Tutar :"+tutar);
 
 
 
