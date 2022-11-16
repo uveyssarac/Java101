@@ -19,7 +19,10 @@ public class Main {
         }
         System.out.println("Tek yön için : 1, Gidiş dönüş için : 2, değerini giriniz  : ");
         int trip = inp.nextInt();
-
+        if(!(age==1 || age ==2)){
+            System.out.println("Hatalı veri girdiniz");
+            System.exit(0);
+        }
         float kmPrice=0.10f; //Km başına ücret
 
         System.out.println("Normal tutar :"+distance*kmPrice*trip);
