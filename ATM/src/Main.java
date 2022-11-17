@@ -16,7 +16,7 @@ public class Main {
             password=data.nextLine();
 
 
-            if (usurname.equals("ahmet") && (password.equals("kaya45"))){
+            if (usurname.equals("Uveys") && (password.equals("Sarac"))){
                 System.out.println("Sisteme giris yapildi..");
                 System.out.println("1-Bakiye \n2-Para yatirma \n3-Para cekme \n4-Cikis yap ");
                 System.out.println("Lutfen yapmak istediginiz islemi saciniz : ");
