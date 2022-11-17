@@ -13,7 +13,9 @@ public class Main {
                 return;
             pattern(number + 5, counter - 1, flag);
         }
+
     }
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
