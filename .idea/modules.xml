@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArtikYil/ArtikYil.iml" filepath="$PROJECT_DIR$/ArtikYil/ArtikYil.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsalSayi/AsalSayi.iml" filepath="$PROJECT_DIR$/AsalSayi/AsalSayi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BasamakSayisiToplami/BasamakSayisiToplami.iml" filepath="$PROJECT_DIR$/BasamakSayisiToplami/BasamakSayisiToplami.iml" />
       <module fileurl="file://$PROJECT_DIR$/BurcOgrenme/BurcOgrenme.iml" filepath="$PROJECT_DIR$/BurcOgrenme/BurcOgrenme.iml" />
       <module fileurl="file://$PROJECT_DIR$/CinZodyagi/CinZodyagi.iml" filepath="$PROJECT_DIR$/CinZodyagi/CinZodyagi.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesenMetot/DesenMetot.iml" filepath="$PROJECT_DIR$/DesenMetot/DesenMetot.iml" />
