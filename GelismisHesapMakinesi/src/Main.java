@@ -118,13 +118,14 @@ public class Main {
     }
     static void rectangleAreaPurlieus() {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Modu alıncak sayıyı giriniz :");
+        System.out.print("Uzun kenar uzunluğunu giriniz:");
         int n = scan.nextInt();
-        System.out.print("Mod sayıyını giriniz :");
+        System.out.print("Kısa kenar uzunluğunu giriniz :");
         int m = scan.nextInt();
-        int result= n%m;
+        int area= n*m;
+        int purlieus=2*n+2*m;
 
-        System.out.println("Sonuç : " + result);
+        System.out.println("Alan : " + area+"\nÇevre : "+purlieus);
     }
     public static void main(String[] args) {
 
